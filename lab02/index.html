@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2</title>
+</head>
+<body>
+    <p id="respuesta"></p>
+    
+    <script >
+        // 
+const respuesta = document.getElementById('respuesta');
+respuesta.innerHTML = 'JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas.Tanto JavaScript como Java son lenguajes de programación orientados a objetos. Los dos utilizan conceptos como encapsulación, herencia, polimorfismo y abstracción.';
+
+// Declarar dos variables con la palabra reservada "var", imprimir el resultado de las operaciones de "Suma", "Resta", "Multiplicación" y "División" en la consola. Las variables pueden ser estáticas. (10pts)
+var num1 = 4;
+var num2 = 6;
+var suma = num1 + num2;
+var resta = num2 - num1;
+var multiplicacion =num1*num2;
+var division = num2 /num1 ;
+console.log(`resultado de la suma: ${suma}
+resultado de la resta: ${resta}
+resultado de la multiplicacion: ${multiplicacion}
+resultafo de la division: ${division}
+`) 
+
+// Declarar dos variables con la palabra reservada "let", imprimir la concatenación de ellas. 
+let nombre ="Victor";
+let apellido = "Delgado" ;
+console.log(` mi nombre completo es ${nombre} ${apellido}`) 
+
+//Declarar dos variables con la palabra reservada "const", imprimir cuál es el tipo de dato de esa variable.
+const PI = 3.1416;
+const cedula = "8-948-1467";
+console.log(`el tipo de dato de la variable PI es: ${typeof PI} tipo de dato de la variable cedula es: ${typeof cedula}`);
+
+// Declarar una variable tipo Objeto, colocar 4 llaves dentro de él que contengan un number, un string, un booleano y un objeto vacío, en ese mismo orden.
+const persona = {
+    edad: 23,
+    nombre: "Victor",
+    hermoso: false,
+    obj:{}
+    }
+
+// Escribir una función en JS que tome un número entero positivo como argumento y devuelva la suma de todos los números menores que sean múltiplos de 3 o 5.
+function sumaDeMultiplos35(num){
+    let acum = 0;
+    for (let i = 0; i < num; i++) {
+        if (i % 3 == 0 || i % 5 == 0) {
+            acum += i;
+        }
+    }
+    return acum;
+}
+
+console.log(sumaDeMultiplos35(10));
+
+    </script>
+</body>
+</html>
