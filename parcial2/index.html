@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/a6a76bb130.js" crossorigin="anonymous"></script>
+    <title>Parcial 2 </title>
+</head>
+<body>
+    <main>
+        <a href=""><img src="img/github-logo.png" alt="github-logo" ></a>
+        <fieldset class="poke-card">
+            <legend><img src="img/pokeapi_256.png" alt="Logo-pokeApi" class="logo"></legend>
+                <header>
+                    <h1>Buscador de pokemones</h1>
+                    <p>Busca desde pokemones hasta las abilidades de los mismos</p>
+                </header>
+                <form >
+                    <section class="inputs-container">
+                        <div class="buscar-container">
+                            <p>Buscar</p>
+                            <input type="text" placeholder="IngresePokemon" class="pokemon-name" required>
+                        </div>
+                        <div class="tipoBusq-container">
+                            <p>Tipo de Busqueda</p>
+                            <select name="" id="select-busqueda" >
+                                <option value="" selected></option>
+                                <option value="poke">por Pokemon</option>
+                                <option value="habilidad">Habilidad</option>
+                            </select>
+                        </div>
+                    </section>
+                    <footer>
+                        <button class="btn-limpiar">Limpiar</button>
+                        <button type="submit" class="btn-buscar">Buscar</button>
+                    </footer>
+                </form>
+        </fieldset>
+            
+        <section class="response"></section>
+
+    </main>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
