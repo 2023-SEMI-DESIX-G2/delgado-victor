@@ -40,9 +40,6 @@ const salidaPokemonInfo = (data)=>{
         cadenaEvolucion
     }
 }
-   
-
-
 const print = async (pokemonName) => {
     const datos = await consumirApi(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
     const {id} = datos;
